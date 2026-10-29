@@ -197,12 +197,3 @@ sofaliving_app/
 
 ---
 
-## 🏆 Evaluation Rubric Checklist (100 / 100 Marks)
-
-- [x] **UI and Responsiveness (20/20)**: Implements pixel-accurate luxury typography, custom color palette, responsive two-column grid, and carousel.
-- [x] **Navigation & Screens (15/15)**: All 7 required screens reachable via bottom navigation, direct links, and checkout flows.
-- [x] **Customisation & Pricing (20/20)**: Real-time dynamic price calculation based on fabric, seating scale, and base price.
-- [x] **Wishlist & Cart (20/20)**: Add/remove, quantity modification, move-to-cart, move-all-to-cart, and coupon discount engine.
-- [x] **Checkout Validation (10/10)**: Strict validation on contact and address fields, White Glove eligibility detection, and demo order confirmation.
-- [x] **Code & State Management (10/10)**: Clean Provider pattern (`ChangeNotifier`), separation of concerns, and clean folder structure.
-- [x] **README & Documentation (5/5)**: Clear setup instructions, explanation of architecture, credentials, and known limitations.
