@@ -17,19 +17,17 @@ class ApiService {
 
   // Android emulator maps 10.0.2.2 to host machine's localhost
   // Windows desktop / iOS / Web use localhost
-  static String get baseUrl {
-    if (kIsWeb) {
-      return 'http://localhost:5000/api';
-    }
-    if (!kIsWeb && Platform.isAndroid) {
-      return 'http://10.0.2.2:5000/api';
-    }
-    return 'http://localhost:5000/api';
-  }
+  static const String baseUrl = 'https://sofaliving-app.onrender.com/api';
 
   bool isConnectedToMySQL = false;
+  DateTime? _lastCheck;
 
   Future<bool> checkConnection() async {
+     if (isConnectedToMySQL &&
+        _lastCheck != null &&
+        DateTime.now().difference(_lastCheck!) < const Duration(minutes: 2)) {
+      return true;
+    }
     try {
       final response = await http
           .get(Uri.parse('$baseUrl/health'))

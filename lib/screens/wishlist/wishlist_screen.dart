@@ -65,17 +65,28 @@ class WishlistScreen extends StatelessWidget {
             return Column(
               children: [
                 _buildEmptyStateToggleBar(wishlist),
-                Expanded(
-                  child: EmptyStateView(
-                    icon: Icons.favorite_border,
-                    title:
-                        'When your wishlist is empty,\ndiscover our new arrivals',
-                    message:
-                        'Explore hand-stitched curved silhouettes and rich Japanese cedar framework tailored for mindful living.',
-                    buttonText: 'Explore Collection',
-                    onButtonPressed: onExplore,
-                  ),
-                ),
+            
+              Expanded(
+  child: LayoutBuilder(
+    builder: (context, constraints) => SingleChildScrollView(
+      child: ConstrainedBox(
+        constraints: BoxConstraints(minHeight: constraints.maxHeight),
+        child: EmptyStateView(
+          icon: Icons.favorite_border,
+          title:
+              'When your wishlist is empty,\ndiscover our new arrivals',
+          message:
+              'Explore hand-stitched curved silhouettes and rich Japanese cedar framework tailored for mindful living.',
+          buttonText: 'Explore Collection',
+          onButtonPressed: onExplore,
+        ),
+      ),
+    ),
+  ),
+),
+
+
+
               ],
             );
           }
