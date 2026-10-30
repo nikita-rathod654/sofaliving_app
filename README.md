@@ -24,12 +24,6 @@ The application precisely implements all **7 luxury mobile screens** shown in th
 
 Per requirements, the application is backed **exclusively by MySQL**. A dedicated REST API server (`server/`) is provided.
 
-### Database Credentials
-- **Host**: `localhost` (or `10.0.2.2` inside Android emulator)
-- **Port**: `3306`
-- **User**: `root`
-- **Password**: `root123` (configurable in `server/.env`)
-- **Database**: `sofaliving_db`
 
 ### Database Tables:
 1. `users`: Authentication & account profiles.
@@ -86,7 +80,7 @@ If you are new to Flutter, follow these simple steps to run the project on your 
 1. Open PowerShell or Command Prompt.
 2. Navigate to the `server` directory:
    ```powershell
-   cd "C:\Users\NIKITA\.gemini\antigravity\scratch\sofaliving_app\server"
+   cd "C:\Users\NIKITA\sofaliving_app\server"
    ```
 3. Initialize the MySQL database and seed the demo data:
    ```powershell
