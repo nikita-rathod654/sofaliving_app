@@ -40,19 +40,14 @@ The Flutter app includes an automatic failover:
 
 ---
 
-## 👥 Demo User vs. New Users
+## 👥 Demo User 
 
 - **Pre-Seeded Demo Account**:
   - **Email**: `aarav.mehta@example.com`
   - **Password**: `password123`
   - **Pre-seeded data**: Includes Aarav's curated shopping bag (Luna Bespoke Sofa + Kanso Sectional), 3 wishlist items (Luna Sofa, Kanso Sectional, Haven Velvet Chair), and saved Mumbai delivery addresses matching the UI screenshots.
   - A quick **"Auto Fill"** button is provided on the Login screen for instant testing!
-- **New User Accounts**:
-  - Click **"Create Account"** on the Login screen.
-  - Enter any name, email, and password.
-  - New users start with a clean slate and their inserted cart, wishlist, and orders are stored specifically for them in the MySQL database.
 
----
 
 ## 💰 Customiser Pricing Matrix
 
